@@ -1,5 +1,7 @@
-body{background-image:url('1.png');
-    background-repeat:repeat;background-position:center}
+body{
+    background-image:url('1.png');
+    background-repeat:repeat;background-position:center
+}
 
 .logo{
         float: left;
@@ -9,7 +11,7 @@ body{background-image:url('1.png');
 
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,11 +20,11 @@ ul {
 
 }
 
-li {
+nav li {
     float: right;
 }
 
-li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -30,10 +32,31 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #111;
 }
 
-main {
-    margin: 120px;
+.pic {
+    margin: 300px;
+}
+
+.pic li {
+    width: 290px;
+    height: 290px;
+    float: left;
+    list-style: none;
+}
+
+.pic li img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 10px 10px #0000001a;
+    transition: all ease .5s;
+
+}
+
+.pic li img:hover {
+    transform: scale(2.5);
+    box-shadow: 0 10px 10px #0000001a;
+    border-radius: 50%;
 }
